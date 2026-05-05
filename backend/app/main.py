@@ -27,7 +27,7 @@ app = FastAPI(title="Survey API", version="1.0.0")
 
 # ---------------- CORS ----------------
 
-ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173").split(",")
+ALLOWED_ORIGINS = os.getenv("ALLOWED_ORIGINS", "https://commit-survey-app.vercel.app/").split(",")
 
 app.add_middleware(
     CORSMiddleware,

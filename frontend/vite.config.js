@@ -7,8 +7,8 @@ export default defineConfig({
     port: 5173,
     proxy: {
       // Proxy API calls to FastAPI during development
-      "/submit": "http://localhost:8000",
-      "/admin": "http://localhost:8000",
+      "/submit": "https://commit-survey-app.onrender.com",
+      "/admin": "https://commit-survey-app.onrender.com",
     },
   },
 });

@@ -6,7 +6,7 @@
  * In production, set VITE_API_BASE_URL to your deployed API URL.
  */
 
-const BASE = import.meta.env.VITE_API_BASE_URL ?? "";
+const BASE = "https://commit-survey-app.onrender.com" ?? "";
 
 /**
  * Submit survey answers.

@@ -8,7 +8,6 @@ export default defineConfig({
     proxy: {
       // Proxy API calls to FastAPI during development
       "/submit": "https://commit-survey-app.onrender.com",
-      "/admin": "https://commit-survey-app.onrender.com",
     },
   },
-});
+}); 

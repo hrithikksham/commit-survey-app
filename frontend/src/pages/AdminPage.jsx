@@ -7,7 +7,7 @@ export default function AdminPage() {
 
   const fetchResults = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:8000/admin/results", {
+      const res = await fetch(https://commit-survey-app.vercel.app/admin/results", {
         headers: {
           "X-Admin-Password": password,
         },

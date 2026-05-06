@@ -9,7 +9,7 @@ export default function AdminPage() {
     try {
       const res = await fetch("https://commit-survey-app.vercel.app/admin/results", {
         headers: {
-          "X-Admin-Password": password,
+          "X-Admin-Password": 2811,
         },
       });
 

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function AdminPage() {
   const [data, setData] = useState(null);
@@ -7,20 +7,21 @@ export default function AdminPage() {
 
   const fetchResults = async () => {
     try {
-      const res = await fetch(https://commit-survey-app.vercel.app/admin/results", {
+      const res = await fetch("https://commit-survey-app.vercel.app/admin/results", {
         headers: {
           "X-Admin-Password": password,
         },
       });
 
       if (!res.ok) {
-        throw new Error("Unauthorized or failed");
+        throw new Error(`Error: ${res.status}`);
       }
 
       const json = await res.json();
       setData(json);
       setError("");
     } catch (err) {
+      console.error(err);
       setError("Failed to fetch results");
     }
   };
@@ -54,8 +55,7 @@ export default function AdminPage() {
 
               {Object.entries(q.options).map(([key, val]) => (
                 <div key={key}>
-                  <strong>{key}</strong> - {val.label} : {val.count} (
-                  {val.percentage}%)
+                  <strong>{key}</strong> - {val.label} : {val.count} ({val.percentage}%)
                 </div>
               ))}
             </div>

@@ -7,7 +7,7 @@ export default function AdminPage() {
 
   const fetchResults = async () => {
     try {
-      const res = await fetch("https://commit-survey-app.vercel.app/admin/results", {
+      const res = await fetch("https://commit-survey-app.onrender.com/admin/results", {
         headers: {
           "X-Admin-Password": 2811,
         },

@@ -1,4 +1,9 @@
 
+/**
+ * questions.js
+ * Survey questions for helloNova MVP validation.
+ */
+
 export const QUESTIONS = [
   {
     id: "q1",
@@ -11,6 +16,7 @@ export const QUESTIONS = [
       { letter: "D", label: "Rarely" },
     ],
   },
+
   {
     id: "q2",
     number: 2,
@@ -22,6 +28,7 @@ export const QUESTIONS = [
       { letter: "D", label: "Search the number online" },
     ],
   },
+
   {
     id: "q3",
     number: 3,
@@ -33,6 +40,7 @@ export const QUESTIONS = [
       { letter: "D", label: "Never" },
     ],
   },
+
   {
     id: "q4",
     number: 4,
@@ -44,6 +52,7 @@ export const QUESTIONS = [
       { letter: "D", label: "Unknown callers" },
     ],
   },
+
   {
     id: "q5",
     number: 5,
@@ -52,9 +61,10 @@ export const QUESTIONS = [
       { letter: "A", label: "Knowing whether the call is important" },
       { letter: "B", label: "Blocking spam automatically" },
       { letter: "C", label: "Receiving a short summary" },
-      { letter: "D", label: "Sounding natural while speaking" },
+      { letter: "D", label: "Speaking naturally on my behalf" },
     ],
   },
+
   {
     id: "q6",
     number: 6,
@@ -66,6 +76,7 @@ export const QUESTIONS = [
       { letter: "D", label: "Not comfortable" },
     ],
   },
+
   {
     id: "q7",
     number: 7,
@@ -77,6 +88,7 @@ export const QUESTIONS = [
       { letter: "D", label: "Smart notifications for urgent calls" },
     ],
   },
+
   {
     id: "q8",
     number: 8,
@@ -88,26 +100,28 @@ export const QUESTIONS = [
       { letter: "D", label: "Unlikely" },
     ],
   },
-{
-  id: "q9",
-  number: 9,
-  text: "How much would you be willing to pay for an AI call assistant that saves you time and blocks spam?",
-  options: [
-    { letter: "A", label: "I expect it to be free" },
-    { letter: "B", label: "Less than ₹99/month" },
-    { letter: "C", label: "₹99–₹299/month" },
-    { letter: "D", label: "I'd pay if it proves its value" },
-  ],
-},
-{
-  id: "q10",
-  number: 10,
-  text: "How would you most likely discover and start using helloNova?",
-  options: [
-    { letter: "A", label: "Friend or colleague recommendation" },
-    { letter: "B", label: "Social media" },
-    { letter: "C", label: "App Store / Play Store" },
-    { letter: "D", label: "Tech blogs or YouTube" },
-  ],
-},
 
+  {
+    id: "q9",
+    number: 9,
+    text: "How much would you be willing to pay for an AI call assistant that saves you time and filters spam?",
+    options: [
+      { letter: "A", label: "It should be free" },
+      { letter: "B", label: "Less than ₹99/month" },
+      { letter: "C", label: "₹99–₹299/month" },
+      { letter: "D", label: "I'd pay if it proves its value" },
+    ],
+  },
+
+  {
+    id: "q10",
+    number: 10,
+    text: "How would you most likely discover helloNova?",
+    options: [
+      { letter: "A", label: "Friend or colleague" },
+      { letter: "B", label: "Social media" },
+      { letter: "C", label: "Play Store / App Store" },
+      { letter: "D", label: "YouTube or tech blogs" },
+    ],
+  },
+];
